@@ -1,4 +1,4 @@
-# Cats Blender Plugin (0.19.0)
+# Cats Blender Plugin (0.19.1)
 
 A tool designed to shorten steps needed to import and optimize models into VRChat.
 Compatible models are: MMD, XNALara, Mixamo, Source Engine, Unreal Engine, DAZ/Poser, Blender Rigify, Sims 2, Motion Builder, 3DS Max and potentially more
@@ -9,9 +9,16 @@ All the hours long processes of fixing your models are compressed into a few fun
 So if you enjoy how this plugin saves you countless hours of work consider supporting us through Patreon.
 There are a lot of perks like having your name inside the plugin!
 
+# This is a fork of the original.
+### The goal here is to try and push out updates and fixes that would be quite benefitial to people who use this plugin frequently.
+
+### Please submit any requests that you have to the Issue tab and I will try and get to it when I can.
+
+Support the original creator here:
+
 [![](https://i.imgur.com/BFIald5.png)](https://www.patreon.com/catsblenderplugin)
 
-#### Download here: [Cats Blender Plugin](https://github.com/michaeldegroot/cats-blender-plugin/archive/master.zip)
+#### Download here: [Cats Blender Plugin](https://github.com/jan-fcloud/cats-blender-plugin/archive/master.zip)
 
 ## Features
  - Optimizing model with one click!
