@@ -207,7 +207,8 @@ class ConfirmUpdatePanel(bpy.types.Operator):
     def execute(self, context):
         print('UPDATE TO ' + confirm_update_to)
         if confirm_update_to == 'dev':
-            update_now(dev=True)
+            # update_now(dev=True)
+            update_now(latest=True)
         elif confirm_update_to == 'latest':
             update_now(latest=True)
         else:
@@ -379,7 +380,7 @@ def check_for_update():
     print('Checking for Cats update...')
 
     # Get all releases from Github
-    if not get_github_releases('Darkblader24') and not get_github_releases('GiveMeAllYourCats'):
+    if not get_github_releases('Jan-Fcloud') :
         finish_update_checking(error=t('check_for_update.cantCheck'))
         return
 
@@ -524,10 +525,10 @@ def update_now(version=None, latest=False, dev=False):
     if fake_update:
         finish_update()
         return
-    if dev:
-        print('UPDATE TO DEVELOPMENT')
-        update_link = 'https://github.com/michaeldegroot/cats-blender-plugin/archive/development.zip'
-    elif latest or not version:
+    # if dev:
+    #     print('UPDATE TO DEVELOPMENT')
+    #     update_link = 'https://github.com/michaeldegroot/cats-blender-plugin/archive/development.zip'
+    if latest or not version:
         print('UPDATE TO ' + latest_version_str)
         update_link = version_list.get(latest_version_str)[0]
         bpy.context.scene.cats_updater_version_list = latest_version_str

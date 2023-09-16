@@ -63,8 +63,8 @@ script:
 
 notifications:
   webhooks:
-    urls:
-      - http://159.89.91.52:7778/webhook
+    #urls:
+    #  - http://159.89.91.52:7778/webhook
     on_success: always # default: always
     on_failure: always # default: always
     on_start: always   # default: never

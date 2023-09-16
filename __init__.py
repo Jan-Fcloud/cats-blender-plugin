@@ -21,19 +21,19 @@
 # SOFTWARE.
 
 # Code author: GiveMeAllYourCats
-# Repo: https://github.com/michaeldegroot/cats-blender-plugin
-# Edits by: GiveMeAllYourCats, Hotox
+# Repo: https://github.com/Jan-Fcloud/cats-blender-plugin/
+# Edits by: GiveMeAllYourCats, Hotox and Jan-Fcloud
 
 bl_info = {
     'name': 'Cats Blender Plugin',
     'category': '3D View',
-    'author': 'GiveMeAllYourCats & Hotox',
+    'author': 'GiveMeAllYourCats & Hotox - Edited by: Jan-Fcloud',
     'location': 'View 3D > Tool Shelf > CATS',
     'description': 'A tool designed to shorten steps needed to import and optimize models into VRChat',
-    'version': (0, 19, 0),  # Has to be (x, x, x) not [x, x, x]!! Only change this version and the dev branch var right before publishing the new update!
+    'version': (0, 19, 1),  # Has to be (x, x, x) not [x, x, x]!! Only change this version and the dev branch var right before publishing the new update!
     'blender': (2, 80, 0),
-    'wiki_url': 'https://github.com/michaeldegroot/cats-blender-plugin',
-    'tracker_url': 'https://github.com/michaeldegroot/cats-blender-plugin/issues',
+    'wiki_url': 'https://github.com/Jan-Fcloud/cats-blender-plugin/',
+    'tracker_url': 'https://github.com/jan-fcloud/cats-blender-plugin/issues',
     'warning': '',
 }
 dev_branch = False
@@ -316,7 +316,10 @@ def register():
     else:
         pass  # From 2.83 on this is no longer needed
     tools.common.get_user_preferences().filepaths.use_file_compression = True
-    bpy.context.window_manager.addon_support = {'OFFICIAL', 'COMMUNITY', 'TESTING'}
+    if not bpy.app.version > (3, 49, 0):
+        bpy.context.window_manager.addon_support = {'OFFICIAL', 'COMMUNITY'}
+    else:
+        bpy.context.window_manager.addon_support = {'OFFICIAL', 'COMMUNITY', 'TESTING'}
 
     # Add shapekey button to shapekey menu
     if hasattr(bpy.types, 'MESH_MT_shape_key_specials'):  # pre 2.80
