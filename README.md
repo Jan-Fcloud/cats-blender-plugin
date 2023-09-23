@@ -1,4 +1,4 @@
-# Cats Blender Plugin (0.19.1)
+# Cats Blender Plugin (0.19.2) - now with MMD Tools v2.9.2!
 
 A tool designed to shorten steps needed to import and optimize models into VRChat.
 Compatible models are: MMD, XNALara, Mixamo, Source Engine, Unreal Engine, DAZ/Poser, Blender Rigify, Sims 2, Motion Builder, 3DS Max and potentially more
@@ -74,6 +74,7 @@ Skip the step where he installs "mmd_tools" in the video below, it's not needed 
  - Jordo
  - Ruubick
  - feilen
+ - Jan-Fcloud
 
 
 ## Model
