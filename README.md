@@ -46,7 +46,7 @@ Join our Discord to report errors, suggestions and make comments!
  - If you have custom Python installed which Blender might use, you need to have Numpy installed
 
 ## Installation
- - Download the plugin: **[Cats Blender Plugin](https://github.com/michaeldegroot/cats-blender-plugin/archive/master.zip)**
+ - Download the plugin: **[Cats Blender Plugin](https://github.com/jan-fcloud/cats-blender-plugin/archive/master.zip)**
    - **Important: Do NOT extract the downloaded zip! You will need the zip file during installation!**
  - Install the addon in blender like so:
    - *This shows Blender 2.79. In Blender 2.80+ go to Edit > Preferences > Add-ons. Also you don't need to save the user settings there.*
@@ -416,7 +416,7 @@ It checks for a new version automatically once every day.
   - Fixed objects getting unhidden when doing any cats operation in 2.80+
   - Updated mmd_tools
 
-Read the full changelog [here](https://github.com/michaeldegroot/cats-blender-plugin/releases).
+Read the full changelog [here](https://github.com/jan-fcloud/cats-blender-plugin/releases).
 
 
 ## Roadmap
